@@ -1,0 +1,440 @@
+@import "./cta.scss";
+@import "./mixin.scss";
+@import "./components/header/header.scss";
+@import "./components/footer/footer.scss";
+
+.leaderboard {
+    margin-top: 17rem;
+    .headline {
+        text-align: center;
+        .title {
+            color: $color-black;
+            font-family: "Poppins";
+            font-size: 4.5rem;
+            font-weight: 600;
+        }
+        .row_btn {
+            margin-top: 4.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            .btn {
+                padding: 1.8rem 2rem 1.8rem 4.5rem;
+                gap: 0.9rem;
+                color: $color-near-black;
+                font-family: "Manrope";
+                font-size: $font-size-medium-unique;
+                font-weight: 600;
+                line-height: 150%;
+                /*24.653px*/
+                letter-spacing: 0.235px;
+                border-radius: 14.087px;
+                border: $border;
+                transition: 0.1s ease-in;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                &:first-child {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background-image: url(/src/img/icons/List.png);
+                        width: 26px;
+                        height: 26px;
+                        position: absolute;
+                        top: 1.5rem;
+                        left: 1rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background-image: url(/src/img/icons/Voice\ Id.png);
+                        width: 26px;
+                        height: 26px;
+                        position: absolute;
+                        top: 1.5rem;
+                        left: 1rem;
+                    }
+                }
+
+                &:last-child {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background-image: url(/src/img/icons/Dollar.png);
+                        width: 26px;
+                        height: 26px;
+                        position: absolute;
+                        top: 1.5rem;
+                        left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .stats {
+        margin-top: 12rem;
+        .stats_content {
+            display: grid;
+            grid-template-columns: 370px 223px 233px 203px 233px 233px;
+            .title_stats {
+                position: relative;
+                color: $color-near-black;
+                font-family: "Manrope";
+                font-size: $font-size-medium-plus;
+                font-weight: 800;
+                line-height: 150%; /* 33.582px */
+                letter-spacing: 0.249px;
+
+                &:nth-child(1) {
+                    &::after {
+                        content: "";
+                        background-image: url(/src/img/icons/arrows-down-up.png);
+                        width: 19px;
+                        height: 19px;
+                        position: absolute;
+                        top: 0.6rem;
+                        left: 12rem;
+                    }
+                }
+                &:nth-child(2) {
+                    &::after {
+                        content: "";
+                        background-image: url(/src/img/icons/arrows-down-up.png);
+                        width: 19px;
+                        height: 19px;
+                        position: absolute;
+                        top: 0.6rem;
+                        left: 9rem;
+                    }
+                }
+                &:nth-child(3) {
+                    &::after {
+                        content: "";
+                        background-image: url(/src/img/icons/arrows-down-up.png);
+                        width: 19px;
+                        height: 19px;
+                        position: absolute;
+                        top: 0.6rem;
+                        left: 6rem;
+                    }
+                }
+                &:nth-child(4) {
+                    &::after {
+                        content: "";
+                        background-image: url(/src/img/icons/arrows-down-up.png);
+                        width: 19px;
+                        height: 19px;
+                        position: absolute;
+                        top: 0.6rem;
+                        left: 13rem;
+                    }
+                }
+                &:nth-child(5) {
+                    &::after {
+                        content: "";
+                        background-image: url(/src/img/icons/arrows-down-up.png);
+                        width: 19px;
+                        height: 19px;
+                        position: absolute;
+                        top: 0.6rem;
+                        left: 8rem;
+                    }
+                }
+                &:nth-child(6) {
+                }
+            }
+
+            .elem {
+                margin-left: 1rem;
+                margin-top: 7.7rem;
+                p {
+                    color: $color-black;
+                    font-family: Poppins;
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    line-height: 140%; /* 36.549px */
+                }
+            }
+
+            .collection {
+                margin-left: 0;
+                display: flex;
+                position: relative;
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 150px;
+                }
+
+                .content_collection {
+                    margin-left: 2rem;
+                    h3 {
+                        margin: 0;
+                        color: $color-black;
+                        font-family: Poppins;
+                        font-size: 2.6rem;
+                        font-weight: 500;
+                        line-height: 140%; /* 36.549px */
+                    }
+                    p {
+                        margin: 0;
+                        color: #64748b;
+                        font-family: Poppins;
+                        font-size: 2.1rem;
+                        font-weight: 400;
+                        line-height: 150%; /* 31.817px */
+                    }
+                }
+            }
+
+            .green {
+                p {
+                    color: #10c352;
+                    font-family: Outfit;
+                }
+            }
+
+            .mobile-text {
+                display: none;
+            }
+        }
+    }
+}
+
+@media  (max-width: 1024px) {
+    .main {
+        .container {
+            width: 880px;
+        }
+    }
+    .leaderboard {
+        .headline {
+        }
+        .stats {
+            .stats_content {
+                grid-template-columns: 220px 159px 159px 179px 138px 174px;
+
+                .title_stats {
+                    font-size: 1.8rem;
+
+                    &:nth-child(1) {
+                        &::after {
+                            content: "";
+                            background-image: url(/src/img/icons/arrows-down-up.png);
+                            width: 19px;
+                            height: 19px;
+                            position: absolute;
+                            top: 0.5rem;
+                            left: 10.5rem;
+                        }
+                    }
+                    &:nth-child(2) {
+                        &::after {
+                            content: "";
+                            background-image: url(/src/img/icons/arrows-down-up.png);
+                            width: 19px;
+                            height: 19px;
+                            position: absolute;
+                            top: 0.5rem;
+                            left: 8rem;
+                        }
+                    }
+                    &:nth-child(3) {
+                        &::after {
+                            content: "";
+                            background-image: url(/src/img/icons/arrows-down-up.png);
+                            width: 19px;
+                            height: 19px;
+                            position: absolute;
+                            top: 0.5rem;
+                            left: 6rem;
+                        }
+                    }
+                    &:nth-child(4) {
+                        &::after {
+                            content: "";
+                            background-image: url(/src/img/icons/arrows-down-up.png);
+                            width: 19px;
+                            height: 19px;
+                            position: absolute;
+                            top: 0.5rem;
+                            left: 11rem;
+                        }
+                    }
+                    &:nth-child(5) {
+                        &::after {
+                            content: "";
+                            background-image: url(/src/img/icons/arrows-down-up.png);
+                            width: 19px;
+                            height: 19px;
+                            position: absolute;
+                            top: 0.5rem;
+                            left: 4em;
+                        }
+                    }
+                }
+
+                .elem {
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .collection {
+                    img {
+                        width: 52px;
+                        height: 51px;
+                    }
+                    .content_collection {
+                        h3 {
+                            font-size: $font-size-small;
+                        }
+                        p {
+                            font-size: $font-size-medium-unique;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        .container {
+            width: 310px;
+            .leaderboard {
+                .headline {
+                    .row_btn {
+                        .btn {
+                            font-size: 1rem;
+                            padding: 1.8rem 1rem 1.5rem 4.5rem;
+                            &:first-child {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    background-image: url(/src/img/icons/List.png);
+                                    width: 26px;
+                                    height: 26px;
+                                    position: absolute;
+                                    top: 1rem;
+                                    left: 1rem;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    background-image: url(/src/img/icons/Voice\ Id.png);
+                                    width: 26px;
+                                    height: 26px;
+                                    position: absolute;
+                                    top: 1rem;
+                                    left: 1rem;
+                                }
+                            }
+
+                            &:last-child {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    background-image: url(/src/img/icons/Dollar.png);
+                                    width: 26px;
+                                    height: 26px;
+                                    position: absolute;
+                                    top: 1.1rem;
+                                    left: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .stats {
+                    .stats_content {
+                        grid-template-columns: 250px 210px;
+                        .title_stats {
+                            &:nth-child(1) {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                            &:nth-child(4) {
+                                display: none;
+                            }
+                            &:nth-child(5) {
+                                display: none;
+                            }
+                            &:nth-child(6) {
+                                display: none;
+                            }
+                        }
+                        .green {
+                            display: none;
+                        }
+                        .floor {
+                            display: none;
+                        }
+                        .owner {
+                            display: none;
+                        }
+
+                        .item {
+                            display: none;
+                        }
+
+                        .collection {
+                            .img {
+                            }
+                        }
+
+                        .elem{
+                            &:nth-child(2){
+                                color: #E23333;
+                            }
+                        }
+
+                        .volume {
+                            p {
+                                margin: 0;
+                            }
+                            .mobile-text {
+                                margin-top: 0.6rem;
+                                margin-left: 0.8rem;
+                                display: block;
+                                color: #10c352;
+                                font-family: Poppins;
+                                font-size: 1.3rem;
+                                font-weight: 400;
+                                line-height: 150%; /* 20.154px */
+                            }
+
+                            .minus{
+                                color: #E23333;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

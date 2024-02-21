@@ -1,0 +1,59 @@
+@import './mixin.scss';
+
+
+$color-black: #141416;
+$color-green: #10C352;
+$color-dark-gray: #606060;
+$color-near-black: #1A202C;
+$color-black: #000000;
+$color-medium-gray: #676767;
+$color-light-gray: #C5C5C5;
+$color-slate-gray: #93989A;
+
+$font-size-xxl: 7.5rem;
+$font-size-small-unique: 1.7rem;
+$font-size-small: 1.8rem;
+$font-size-large-unique: 3.6rem;
+$font-size-medium-unique: 1.6rem;
+$font-size-medium-plus: 2.1rem;
+$font-size-xsmall-unique: 1.4rem;
+$font-size-xsmall-plus: 1.5rem;
+$font-size-medium-large: 2.4rem;
+$border: 2px solid #141416;
+$border-radius: 1.4rem;
+$transition: .1s easy-in;
+$primary-color: rgba(20, 177, 177, 0.5);
+$overlay-color: rgba(24, 39, 51, 0.85);
+$menu-speed: 0.75s;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.main{
+    .container{
+        padding: 0;
+        margin: 0 auto;
+        width: 1400px;
+    }
+}
+
+ 
+a{
+    text-decoration: none;
+    color: $color-black;
+}
